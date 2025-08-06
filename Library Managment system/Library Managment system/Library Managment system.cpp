@@ -21,24 +21,24 @@ void EnableColors() {
 void LogIn(User& u) {
     string name, id, result, contact;
     cin.ignore();
-    cout << "\n\033[1;34mPlease Enter Your Full Name: \033[0m";
+    cout << "\033[1;34mPlease Enter Your Full Name: \033[0m";
     getline(cin, name);
     u.SetName(name);
 
-    cout << "\n\033[1;34mPlease Enter your National ID: \033[0m";
+    cout << "\033[1;34mPlease Enter your National ID: \033[0m";
     cin >> id;
     u.SetUserId(id);
 
-    cout << "\n\033[1;34mDo you want to login with Phone or Email: \033[0m";
+    cout << "\033[1;34mDo you want to login with Phone or Email: \033[0m";
     cin >> result;
 
     if (result == "phone" || result == "Phone") {
-        cout << "\n\033[1;34mEnter phone: \033[0m";
+        cout << "\033[1;34mEnter phone: \033[0m";
         cin >> contact;
         u.SetPhoneNumber(contact);
     }
     else {
-        cout << "\n\033[1;34mEnter email: \033[0m";
+        cout << "\033[1;34mEnter email: \033[0m";
         cin >> contact;
         u.SetEmail(contact);
     }
@@ -158,3 +158,4 @@ int main() {
 
     return 0;
 }
+
