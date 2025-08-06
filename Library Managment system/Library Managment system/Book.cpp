@@ -26,7 +26,7 @@ void Book::AddBooks(int p, string n) {
 	price.push_back(p);
 	name.push_back(n);
 	state.push_back(0);
-	cout << "Added successfully.\n";
+	
 }
 
 void Book::DeleteBooks(int position) {
@@ -86,3 +86,4 @@ void Book::BookABook(User& u) {
 		u.AddPayment(price[choice] / 2);
 	}
 }
+
